@@ -7,6 +7,7 @@ const possibleChoices = document.querySelectorAll('button')
 
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click',(e)=>{
     userChoiceInternal = e.target.id 
+    //console.log(userChoiceInternal)
     userChoice.innerHTML = userChoiceInternal
     generateComputerChoice()
     calculateResult()
@@ -22,7 +23,7 @@ function generateComputerChoice(){
         computerChoiceInternal = 'paper'}
     if (choicen === 2){
         computerChoiceInternal = 'scissors'}
-        console.log(computerChoiceInternal)
+        //console.log(computerChoiceInternal)
     computerChoice.innerHTML = computerChoiceInternal
 }
 
